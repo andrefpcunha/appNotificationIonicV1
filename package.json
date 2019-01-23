@@ -1,5 +1,5 @@
 {
-  "name": "appNotificationIonicV1",
+  "name": "br.com.youper.notificationsystem.app",
   "version": "0.0.1",
   "description": "An Ionic project for notification system mobile",
   "devDependencies": {
