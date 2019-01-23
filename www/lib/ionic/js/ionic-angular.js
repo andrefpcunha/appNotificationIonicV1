@@ -4397,7 +4397,7 @@ IonicModule
  *           'home-tab': {
  *             prefetchTemplate: false,
  *             templateUrl: "tabs-templates/home.html",
- *             controller: 'HomeTabCtrl'
+ *             controller: 'HomeCtrl'
  *           }
  *         }
  *       });

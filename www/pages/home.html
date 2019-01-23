@@ -1,0 +1,15 @@
+<ion-view view-title="Home">
+    <ion-header-bar class="bar bar-header bar-light">
+        <div><input ng-model="newNotification" style="max-width:15px;"></input></div>
+        
+        <a class="button button-icon item-avatar icon-left ion-android-person"></a>
+        
+        <a class="button button-icon icon-right ion-android-notifications-none"
+            style="text-align:right;"
+            ng-disabled="!newNotification"
+        >
+            <span class="point" ng-show="newNotification" ng-click="viewMessage()">.</span>
+        </a>
+    </ion-header-bar>
+</ion-view>
+          

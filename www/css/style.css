@@ -12,3 +12,10 @@ a.ion-android-notifications-none {
     color: rgb(216, 219, 26);
     right: 4px;
   }
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
