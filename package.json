@@ -1,7 +1,7 @@
 {
   "name": "appNotificationIonicV1",
   "version": "0.0.1",
-  "description": "An Ionic project",
+  "description": "An Ionic project for notification system mobile",
   "devDependencies": {
     "@ionic/v1-toolkit": "^1.0.0",
     "gulp": "^3.5.6",

@@ -1,1 +1,14 @@
-/* Empty. Add your own CSS if you like */
+a.ion-android-notifications-none {
+    position: relative;
+    font-size: 2em;
+    color: grey;
+    cursor: pointer;
+  }
+ 
+  span.point {
+    position: absolute;
+    font-size: 7em;
+    top: -47px;
+    color: rgb(216, 219, 26);
+    right: 4px;
+  }
