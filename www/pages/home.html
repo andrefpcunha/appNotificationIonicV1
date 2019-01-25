@@ -1,15 +1,18 @@
-<ion-view view-title="Home">
-    <ion-header-bar class="bar bar-header bar-light">
-        <div><input ng-model="newNotification" style="max-width:15px;"></input></div>
-        
-        <a class="button button-icon item-avatar icon-left ion-android-person"></a>
+<ion-view hide-back-button="true" style="background: floralwhite;" ng-controller="HomeCtrl">
+    <ion-nav-title>
+        <!-- <input ng-model="newNotification" style="max-width:15px;"></input> -->
+
+        <a class="button button-icon item-avatar icon-left ion-android-person" style="float: left;"></a>
         
         <a class="button button-icon icon-right ion-android-notifications-none"
-            style="text-align:right;"
-            ng-disabled="!newNotification"
+            style="float: right;"
+            ng-click="viewMessages()"
         >
-            <span class="point" ng-show="newNotification" ng-click="viewMessage()">.</span>
+            <span class="point" ng-show="checkboxModel.value">.</span>
         </a>
-    </ion-header-bar>
+    </ion-nav-title>
+    <ion-content>
+        <ion-checkbox ng-model = "checkboxModel.value">send new message </ion-checkbox>
+        <br/>
+    </ion-content>
 </ion-view>
-          

@@ -17,13 +17,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('tabs', {
       url: "/tab",
-      templateUrl: "templates/tabs.html"
+      templateUrl: "pages/tabs.html"
     })
     .state('tabs.home', {
       url: "/home",
       views: {
         'home-tab': {
-          templateUrl: "templates/home.html",
+          templateUrl: "pages/home.html",
           controller: 'HomeCtrl'
         }
       }
@@ -32,7 +32,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
       url: "/messages",
       views: {
         'home-tab': {
-          templateUrl: "templates/messages.html"
+          templateUrl: "pages/messages.html"
+        }
+      }
+    })
+    .state('tabs.viewmessage', {
+      url: "/viewmessage",
+      views: {
+        'home-tab': {
+          templateUrl: "pages/viewmessage.html"
         }
       }
     })
@@ -41,6 +49,4 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 })
 
-app.controller('HomeCtrl', function($scope) {
-  //console.log('HomeCtrl');
-});
+
