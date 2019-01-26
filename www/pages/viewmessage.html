@@ -1,19 +1,20 @@
-<ion-view style="background: floralwhite;" ng-controller="HomeCtrl">
+<ion-view style="background: floralwhite;">
     <ion-content class="padding">
         <div class="list card">
-            <p style="margin-left:10px;">5 minute ago</p>
+            <p style="margin-left:10px;">{{detailMessage.date}}</p>
 
             <div class="item item-body">
-                <img class="full-image center" src="https://st.depositphotos.com/1014674/3476/i/950/depositphotos_34760407-stock-photo-3d-human-points-a-finger.jpg" style="max-width:200px">
+                <h3>{{detailMessage.subject}}</h3>
                 <p>
-                    Now you can customize your avatar uploading your selfie.
-                    Just click on the avatar, take or select a picture and save.
+                    {{detailMessage.msg}}
                 </p>
-                <a class="button button-energized center" href="#/tab/home">
+                <img class="full-image center" ng-src="{{detailMessage.scrImg}}">
+                <br/>
+                <a class="button button-energized center" href="#/">
                     Go it
                 </a>
             </div>
-            
-            </div>
+        </div>
     </ion-content>
+
     </ion-view>

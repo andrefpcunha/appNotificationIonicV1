@@ -15,38 +15,23 @@ app.run(function($ionicPlatform) {
 app.config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
-    .state('tabs', {
-      url: "/tab",
-      templateUrl: "pages/tabs.html"
+    .state('home', {
+      url: '/',
+      templateUrl: 'pages/home.html',
+      controller: 'HomeCtrl'
     })
-    .state('tabs.home', {
-      url: "/home",
-      views: {
-        'home-tab': {
-          templateUrl: "pages/home.html",
-          controller: 'HomeCtrl'
-        }
-      }
+    .state('messages', {
+      url: '/messages',
+      templateUrl: 'pages/messages.html',
+      controller: 'MessagesCtrl'
     })
-    .state('tabs.messages', {
-      url: "/messages",
-      views: {
-        'home-tab': {
-          templateUrl: "pages/messages.html"
-        }
-      }
+    .state('viewmessage', {
+      url: '/viewmessage/:id',
+      templateUrl: 'pages/viewmessage.html',
+      controller: 'viewmessageCtrl'
     })
-    .state('tabs.viewmessage', {
-      url: "/viewmessage",
-      views: {
-        'home-tab': {
-          templateUrl: "pages/viewmessage.html"
-        }
-      }
-    })
+    
 
-   $urlRouterProvider.otherwise("/tab/home");
+   $urlRouterProvider.otherwise("/");
 
 })
-
-
